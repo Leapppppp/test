@@ -2,7 +2,7 @@ import type { AppRouteModule } from '@/router/types';
 
 import { LAYOUT } from '@/router/constant';
 import { t } from '@/hooks/web/useI18n';
-import {RoleEnum} from "@/enums/roleEnum";
+import { RoleEnum } from '@/enums/roleEnum';
 
 const flow: AppRouteModule = {
   path: '/flow',
@@ -21,6 +21,15 @@ const flow: AppRouteModule = {
       component: () => import('@/views/demo/comp/flow-chart/index.vue'),
       meta: {
         title: t('账号登录安全'),
+      },
+    },
+
+    {
+      path: 'personalInformation',
+      name: 'personalInformation',
+      component: () => import('@/views/demo/personalInformation/personalInformation.vue'),
+      meta: {
+        title: t('个人信息安全'),
       },
     },
   ],

@@ -52,23 +52,20 @@
         {{ t('sys.login.registerButton') }}
       </Button> -->
     </FormItem>
-    <ARow class="enter-x" :gutter="[16, 16]">
-      <ACol :md="8" :xs="24">
-        <Button block @click="setLoginState(LoginStateEnum.MOBILE)">
-          {{ t('管理员登录') }}
-        </Button>
-      </ACol>
-      <ACol :md="8" :xs="24">
-        <Button block @click="setLoginState(LoginStateEnum.QR_CODE)">
-          {{ t('sys.login.qrSignInFormTitle') }}
-        </Button>
-      </ACol>
-      <ACol :md="8" :xs="24">
-        <Button block @click="setLoginState(LoginStateEnum.REGISTER)">
-          {{ t('sys.login.registerButton') }}
-        </Button>
-      </ACol>
-    </ARow>
+    <FormItem class="enter-x">
+      <Button
+        type="primary"
+        size="large"
+        block
+        @click="setLoginState(LoginStateEnum.REGISTER)"
+        style="background-color:#fff; color: #437dcb"
+      >
+        {{ t('sys.login.registerButton') }}
+      </Button>
+      <!-- <Button size="large" class="mt-4 enter-x" block @click="handleRegister">
+        {{ t('sys.login.registerButton') }}
+      </Button> -->
+    </FormItem>
 
     <Divider class="enter-x">{{ t('sys.login.otherSignIn') }}</Divider>
 

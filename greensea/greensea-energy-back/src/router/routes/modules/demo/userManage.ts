@@ -30,7 +30,7 @@ const fontManager: AppRouteModule = {
       meta: {
         title: t('管理员用户管理'),
       },
-      component: () => import('@/views/demo/userManage/adminManage.vue'),
+      component: () => import('@/views/demo/system/account/index.vue'),
     },
     {
       path: 'userManage',
@@ -38,7 +38,7 @@ const fontManager: AppRouteModule = {
       meta: {
         title: t('个人/企业用户管理'),
       },
-      component: () => import('@/views/demo/userManage/userManage.vue'),
+      component: () => import('@/views/demo/system/account/index.vue'),
     },
     // {
     //   path: 'dataMap',

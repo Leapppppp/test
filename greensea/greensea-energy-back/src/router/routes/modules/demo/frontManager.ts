@@ -32,6 +32,14 @@ const fontManager: AppRouteModule = {
       },
       component: () => import('@/views/demo/frontManager/changeImg.vue'),
     },
+    {
+      path: 'changeText',
+      name: 'changeText',
+      meta: {
+        title: '修改前端文字',
+      },
+      component: () => import('@/views/demo/frontManager/changeText.vue'),
+    },
     // {
     //   path: 'dataMap',
     //   name: 'dataMap',

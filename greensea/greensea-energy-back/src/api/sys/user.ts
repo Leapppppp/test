@@ -11,11 +11,11 @@ import {
 import { ErrorMessageMode } from '#/axios';
 
 enum Api {
-  Login = '/background/user/login',
+  Login = '/background/gm/login',
   Logout = '/logout',
-  SuperLogin = '/background/gm/login',
-  GetUserInfo = '/background/user/getselfmag',
-  GetSuperUserInfo = '/background/gm/getselfmag',
+  // SuperLogin = '/background/gm/login',
+  GetUserInfo = '/background/gm/getselfmag',
+  // GetSuperUserInfo = '/background/gm/getselfmag',
   GetPermCode = '/getPermCode',
   TestRetry = '/testRetry',
   Sign = '/background/user/register',
